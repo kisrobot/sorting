@@ -2,7 +2,7 @@
 
 Sorting adds reordering abilities to [GORM](https://github.com/jinzhu/gorm) models and sorts collections.
 
-[![GoDoc](https://godoc.org/github.com/qor/sorting?status.svg)](https://godoc.org/github.com/qor/sorting)
+[![GoDoc](https://godoc.org/github.com/kisrobot/sorting?status.svg)](https://godoc.org/github.com/kisrobot/sorting)
 
 ### Register GORM Callbacks
 
@@ -11,7 +11,7 @@ Sorting utilises [GORM](https://github.com/jinzhu/gorm) callbacks to log data, s
 ```go
 import (
   "github.com/jinzhu/gorm"
-  "github.com/qor/sorting"
+  "github.com/kisrobot/sorting"
 )
 
 func main() {
@@ -95,13 +95,13 @@ products // => []Product{
 
 ### Sorting GORM-backend Models
 
-After enabling sorting modes for [GORM](https://github.com/jinzhu/gorm) models, [QOR Admin](https://github.com/qor/admin) will automatically enable the sorting feature for the resource.
+After enabling sorting modes for [GORM](https://github.com/jinzhu/gorm) models, [QOR Admin](https://github.com/kisrobot/admin) will automatically enable the sorting feature for the resource.
 
 [Sorting Demo with QOR](http://demo.getqor.com/admin/colors?sorting=true)
 
 ### Sorting Collections
 
-If you want to make a sortable [select_many](http://doc.getqor.com/admin/metas/select-many.html), [collection_edit](http://doc.getqor.com/admin/metas/collection-edit.html) field, You could add a `sorting.SortableCollection` field with name: Field's name + 'Sorter'; which is used to save above field's data order. That Field will also be identified as sortable in [QOR Admin](https://github.com/qor/admin).
+If you want to make a sortable [select_many](http://doc.getqor.com/admin/metas/select-many.html), [collection_edit](http://doc.getqor.com/admin/metas/collection-edit.html) field, You could add a `sorting.SortableCollection` field with name: Field's name + 'Sorter'; which is used to save above field's data order. That Field will also be identified as sortable in [QOR Admin](https://github.com/kisrobot/admin).
 
 ```go
 // For model relations

@@ -7,10 +7,10 @@ import (
 	"path"
 	"strconv"
 
-	"github.com/qor/admin"
-	"github.com/qor/qor"
-	"github.com/qor/qor/resource"
-	"github.com/qor/roles"
+	"github.com/kisrobot/admin"
+	"github.com/kisrobot/qor"
+	"github.com/kisrobot/qor/resource"
+	"github.com/kisrobot/roles"
 )
 
 func updatePosition(context *admin.Context) {

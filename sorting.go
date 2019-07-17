@@ -6,8 +6,8 @@ import (
 	"reflect"
 
 	"github.com/jinzhu/gorm"
-	"github.com/qor/admin"
-	"github.com/qor/publish"
+	"github.com/kisrobot/admin"
+	"github.com/kisrobot/publish"
 )
 
 type sortingInterface interface {
@@ -45,7 +45,7 @@ type SortingDESC struct {
 func (SortingDESC) SortingDesc() {}
 
 func init() {
-	admin.RegisterViewPath("github.com/qor/sorting/views")
+	admin.RegisterViewPath("github.com/kisrobot/sorting/views")
 }
 
 func newModel(value interface{}) interface{} {
